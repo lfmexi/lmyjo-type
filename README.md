@@ -9,7 +9,7 @@ Instalación
 ----
 De forma local en el proyecto:
 
-`npm install --save git+https://github.com/lmyjo/operation-type.git`
+`npm install --save git+https://github.com/lmyjo/lmyjo-type.git`
 
 Uso
 ----
