@@ -1,0 +1,21 @@
+{
+  "name": "lmyjo-type",
+  "version": "0.0.1",
+  "description": "node_module for listing the type of operations supported by the InvestmentAPI",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lmyjo/lmyjo-type.git"
+  },
+  "scripts": {
+    "test": "./node_modules/mocha/bin/mocha test"
+  },
+  "keywords": [
+    "catalog"
+  ],
+  "author": "Luis Morales <lfmexi@github.com>",
+  "license": "GPL-3.0",
+  "devDependencies": {
+    "mocha": "^2.3.4"
+  }
+}
