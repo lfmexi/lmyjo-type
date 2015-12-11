@@ -1,6 +1,7 @@
 var factor = require('./lib/factor');
 var movimiento = require('./lib/movimiento');
 var unidadTiempo = require('./lib/unidadTiempo');
+var evaluationState = require('./lib/evaluationState');
 
 function getElementByKey (container, key) {
   var index = container.indexOf(key);
@@ -22,5 +23,11 @@ module.exports = {
   /** Método encargado de la obtención del tipo de unidad de tiempo **/
   getUnidadTiempo: function getUnidadByKey (key) {
     return getElementByKey(unidadTiempo, key);
+  },
+  /** Método encargado de la obtención del objeto referente al estado de
+   *  una evaluación
+   **/
+  getEstadoEvaluacion: function getEstadoByKey (key) {
+    return evaluationState[key] || null;
   }
 };
