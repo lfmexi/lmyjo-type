@@ -46,3 +46,20 @@ var types = require('lmyjo-type');
 var unit = types.getUnidadTiempo('año');
 //obtendrá la descripción del factor simple
 ```
+
+### getEstadoEvaluacion (key)
+
+Dada la clave, obtiene el objeto pertenciente al estado de evaluación indicado.
+
+```js
+var types = require('lmyjo-type');
+
+var state = types.getEstadoEvaluacion('evaluation_complete');
+//obtendrá el objeto de mensaje del estado de evaluación completa:
+
+{
+  code: 1,
+  message 'evaluation_complete'
+}
+
+```
