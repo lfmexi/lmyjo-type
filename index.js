@@ -18,7 +18,7 @@ module.exports = {
   },
   /** Método encargado de la obtención del tipo de movimiento **/
   getTipoMovimiento: function getMovimientoByKey (key) {
-    return getElementByKey(movimiento, key);
+    return movimiento[key] || null;
   },
   /** Método encargado de la obtención del tipo de unidad de tiempo **/
   getUnidadTiempo: function getUnidadByKey (key) {

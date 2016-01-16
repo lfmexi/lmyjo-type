@@ -23,8 +23,8 @@ describe('lmyjo-type module', function testType () {
 
   describe('#getTipoMovimiento()', function testTipoMovimiento () {
     it('should return the right value for the key', function () {
-      assert.equal(movimiento[1], lmyjoType.getTipoMovimiento('ingreso'));
-      assert.equal(movimiento[0], lmyjoType.getTipoMovimiento('egreso'));
+      assert.equal(movimiento.ingreso, lmyjoType.getTipoMovimiento('ingreso'));
+      assert.equal(movimiento.egreso, lmyjoType.getTipoMovimiento('egreso'));
     });
 
     it('should return null when the key is not present in the array', function () {
