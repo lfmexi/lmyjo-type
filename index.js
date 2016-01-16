@@ -22,7 +22,7 @@ module.exports = {
   },
   /** Método encargado de la obtención del tipo de unidad de tiempo **/
   getUnidadTiempo: function getUnidadByKey (key) {
-    return getElementByKey(unidadTiempo, key);
+    return unidadTiempo[key] || null;
   },
   /** Método encargado de la obtención del objeto referente al estado de
    *  una evaluación

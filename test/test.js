@@ -36,12 +36,12 @@ describe('lmyjo-type module', function testType () {
 
   describe('#getUnidadTiempo()', function testTipoMovimiento () {
     it('should return the right value for the key', function () {
-      assert.equal(unidadTiempo[0], lmyjoType.getUnidadTiempo('dia'));
-      assert.equal(unidadTiempo[1], lmyjoType.getUnidadTiempo('mes'));
-      assert.equal(unidadTiempo[2], lmyjoType.getUnidadTiempo('bimestre'));
-      assert.equal(unidadTiempo[3], lmyjoType.getUnidadTiempo('trimestre'));
-      assert.equal(unidadTiempo[4], lmyjoType.getUnidadTiempo('semestre'));
-      assert.equal(unidadTiempo[5], lmyjoType.getUnidadTiempo('año'));
+      assert.equal(unidadTiempo['dia'], lmyjoType.getUnidadTiempo('dia'));
+      assert.equal(unidadTiempo['mes'], lmyjoType.getUnidadTiempo('mes'));
+      assert.equal(unidadTiempo['bimestre'], lmyjoType.getUnidadTiempo('bimestre'));
+      assert.equal(unidadTiempo['trimestre'], lmyjoType.getUnidadTiempo('trimestre'));
+      assert.equal(unidadTiempo['semestre'], lmyjoType.getUnidadTiempo('semestre'));
+      assert.equal(unidadTiempo['año'], lmyjoType.getUnidadTiempo('año'));
     });
 
     it('should return null when the key is not present in the array', function () {
